@@ -1,10 +1,13 @@
 # Green Gauge  
 
+### See the DevPost! -> [HERE](https://devpost.com/software/green-gauge-gsqwf9?_gl=1*zu9gwt*_gcl_au*NjI4ODI2OTc4LjE3NDAzMjQ4ODk.*_ga*Nzg4NjU3MjM2LjE3MzA1OTM4NjY.*_ga_0YHJK3Y10M*MTc0MDc1ODYwNy45LjEuMTc0MDc1ODYxNS4wLjAuMA)
+### See the original Repo -> [HERE](https://github.com/Nick-David1/CivicTechHackathon2025)  
+### View the demo! -> [HERE](https://www.youtube.com/watch?v=1rFr6zJA81k&ab_channel=FrankSeely)  
+
 ## About Me  
 Frank Seely | Data Science @ Boston University    
 Portfolio: https://seelyfrank.github.io/webportfolio/    
 Email: seelyfrank@gmail.com    
-LinkedIn: https://www.linkedin.com/in/frank-seely/    
 
 ## Team Members    
 Nick David | https://www.linkedin.com/in/nicholasedavid/  
@@ -15,15 +18,18 @@ John Kim | https://www.linkedin.com/in/john-kim2/
 Living in an urban environment like Boston, we recognize trees' crucial role in improving air quality, reducing carbon emissions, and mitigating rising temperatures. We created Green Gauge to raise awareness and provide actionable insights to policymakers and the community, helping enhance Boston’s environmental quality.
 
 ## What It Does    
-Green Gauge allows users to input an address anywhere in the world. It retrieves a satellite image of the location, processes it using a pre-trained CNN model (which can be found [here](https://deepforest.readthedocs.io/en/v1.5.0/), and generates an analysis. The results are then sent to the Open AI Vision LLM, which provides actionable insights. The tool evaluates tree coverage percentage, number of trees, weather conditions, and air quality, offering valuable data to drive environmental improvements.
+Green Gauge allows users to input an address anywhere in the world. It retrieves a satellite image of the location, processes it using a pre-trained CNN model (which can be found [here](https://deepforest.readthedocs.io/en/v1.5.0/)), and generates an analysis. The results are then sent to the Open AI Vision LLM, which provides actionable insights. The tool evaluates tree coverage percentage, number of trees, weather conditions, and air quality, offering valuable data to drive environmental improvements.
 
 ## How We Built It  
 We developed Green Gauge using React + Vite for the front end. We integrated several APIs, including OpenAI Vision, AirVisual API, and Mapbox to gather and analyze environmental data. These APIs enable us to retrieve satellite images and extract relevant ecological insights.
 
 **API Links**  
-OpenAI Vision API: https://platform.openai.com/docs/guides/vision  
-AirVisual API: https://www.iqair.com/us/commercial-air-quality-monitors/api?srsltid=AfmBOorC_3i7jGxKzhd01c1utTdefVZjXQYCLSWGQ7WL2nom89CaGtmu  
-MapBox API: https://www.mapbox.com/  
+OpenAI Vision API: [link](https://platform.openai.com/docs/guides/vision  )
+AirVisual API: [link](https://www.iqair.com/us/commercial-air-quality-monitors/api?srsltid=AfmBOorC_3i7jGxKzhd01c1utTdefVZjXQYCLSWGQ7WL2nom89CaGtmu) 
+MapBox API: [link](https://www.mapbox.com/)  
+
+### My contributions:  
+Given our limited time and resources, I primarily focused on finding the best way to process and analyze the satellite image using the best pre-trained model. After hours of searching, I integrated Deepforest and found additional information from AirVisual. My contributions can mostly be found in the scripts section of the repo.
 
 ### Challenges We Faced
 One of our biggest challenges was effectively analyzing satellite images. We struggled to find a pre-trained model that provided sufficiently accurate results. Given time constraints, training a CNN model from scratch was infeasible, so we relied on an existing vision model capable of detecting trees rather than multiple land-use classes like roads or rooftops.
@@ -37,4 +43,4 @@ We gained experience using Mapbox-GL's API and converting its images into a form
 ### Deployment
 Unfortunately, deploying Green Gauge using the OpenAI API is too expensive for us to maintain; however, a demo video of the system can be found [here](https://www.youtube.com/watch?v=1rFr6zJA81k&ab_channel=FrankSeely): 
 
- 
+
