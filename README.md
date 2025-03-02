@@ -24,9 +24,11 @@ Green Gauge allows users to input an address anywhere in the world. It retrieves
 We developed Green Gauge using React + Vite for the front end. We integrated several APIs, including OpenAI Vision, AirVisual API, and Mapbox to gather and analyze environmental data. These APIs enable us to retrieve satellite images and extract relevant ecological insights.
 
 **API Links**  
-OpenAI Vision API: [link](https://platform.openai.com/docs/guides/vision  )
-AirVisual API: [link](https://www.iqair.com/us/commercial-air-quality-monitors/api?srsltid=AfmBOorC_3i7jGxKzhd01c1utTdefVZjXQYCLSWGQ7WL2nom89CaGtmu) 
-MapBox API: [link](https://www.mapbox.com/)  
+OpenAI Vision API: [link](https://platform.openai.com/docs/guides/vision  )  
+
+AirVisual API: [link](https://www.iqair.com/us/commercial-air-quality-monitors/api?srsltid=AfmBOorC_3i7jGxKzhd01c1utTdefVZjXQYCLSWGQ7WL2nom89CaGtmu)   
+
+MapBox API: [link](https://www.mapbox.com/)    
 
 ### My contributions:  
 Given our limited time and resources, I primarily focused on finding the best way to process and analyze the satellite image using the best pre-trained model. After hours of searching, I integrated Deepforest and found additional information from AirVisual. My contributions can mostly be found in the scripts section of the repo.
