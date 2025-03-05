@@ -2,7 +2,6 @@ import sys
 import json
 import base64
 import cv2
-import os
 
 import numpy as np
 from deepforest import main
@@ -52,7 +51,7 @@ def analyze_image(img_64, lat, lon):
         tree_area = sum((row["xmax"] - row["xmin"]) * (row["ymax"] - row["ymin"]) for _, row in boxes.iterrows())
         cover = (tree_area / total_area) * 100
         
-        api_key = os.getenv('AIRVISUAL_API_KEY')
+        api_key = os.getenv
         air_quality = get_air_quality(lat, lon, api_key)
         
         # return results

@@ -2,20 +2,14 @@ import sys
 import json
 import base64
 import cv2
-import os
 
 import numpy as np
 from deepforest import main
 import requests
-from dotenv import load_dotenv
 
 # init the model
 model = main.deepforest()
 model.use_release() # use pretrained version
-
-# load the .env
-load_dotenv(os.path.join(os.path.dirname(__file__), '../../.env'))
-
 
 '''
 This function will take in the encoded base64 image string as well as the latitude and longitude of the location in the image and return a dict
@@ -52,7 +46,7 @@ def analyze_image(img_64, lat, lon):
         tree_area = sum((row["xmax"] - row["xmin"]) * (row["ymax"] - row["ymin"]) for _, row in boxes.iterrows())
         cover = (tree_area / total_area) * 100
         
-        api_key = os.getenv('AIRVISUAL_API_KEY')
+        api_key = '012f8393-a199-4264-be78-89fbb395da6d'
         air_quality = get_air_quality(lat, lon, api_key)
         
         # return results

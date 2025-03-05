@@ -118,17 +118,14 @@ Based on the actual tree coverage percentage (${analysisResult.tree_cover_percen
         // log message sending
         console.log('Message sent to OpenAI:', userMessage);
 
-        // create GPT instance
         const gptResponse = await openai.chat.completions.create({
           model: "gpt-4-turbo",
           messages: [
             {
-              // prompt the system
               role: "system",
               content: "You are an environmental expert. Provide exactly 3 concise, one-sentence bullet point recommendations based on tree coverage and count. Start with 'Based on the actual tree coverage percentage and tree count:' and use this format: • [recommendation]"
             },
             {
-              // prompt the user
               role: "user",
               content: userMessage
             }
@@ -137,7 +134,6 @@ Based on the actual tree coverage percentage (${analysisResult.tree_cover_percen
         });
 
         res.json({
-          // spread
           ...analysisResult,
           analysis: gptResponse.choices[0].message.content
         });

@@ -137,7 +137,6 @@ Based on the actual tree coverage percentage (${analysisResult.tree_cover_percen
         });
 
         res.json({
-          // spread
           ...analysisResult,
           analysis: gptResponse.choices[0].message.content
         });

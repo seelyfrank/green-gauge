@@ -5,10 +5,9 @@
 // import the express app
 const webapp = require('./app.js');
 
-// define our port for the Express server
 const port = 3000;
 
 // start the web server
-webapp.listen(port, () => {
+webapp.listen(port, () =>{
     console.log('Server running on port', port);
 })

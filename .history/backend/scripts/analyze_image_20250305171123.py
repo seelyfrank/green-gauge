@@ -2,7 +2,6 @@ import sys
 import json
 import base64
 import cv2
-import os
 
 import numpy as np
 from deepforest import main

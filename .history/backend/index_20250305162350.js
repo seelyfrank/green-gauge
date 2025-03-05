@@ -5,7 +5,6 @@
 // import the express app
 const webapp = require('./app.js');
 
-// define our port for the Express server
 const port = 3000;
 
 // start the web server

@@ -6,7 +6,7 @@ const port = 8080;
 const cors = require('cors');
 require('dotenv').config();
 
-// define the connection to the front end
+
 app.use(cors({
   origin: 'http://localhost:5173',
   methods: ['POST', 'GET'],
