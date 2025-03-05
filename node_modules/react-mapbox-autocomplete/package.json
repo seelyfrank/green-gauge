@@ -1,0 +1,59 @@
+{
+  "name": "react-mapbox-autocomplete",
+  "jest": {
+    "verbose": true,
+    "moduleNameMapper": {
+      "^.+\\.(css|less)$": "<rootDir>/config/CSSStub.js"
+    },
+    "snapshotSerializers": [
+      "<rootDir>/node_modules/enzyme-to-json/serializer"
+    ]
+  },
+  "version": "0.2.3",
+  "description": "independent react component for mapbox autocomplete",
+  "main": "index.js",
+  "scripts": {
+    "build": "NODE_ENV=production ./node_modules/.bin/babel ReactMapboxAutocomplete.js -o index.js",
+    "prepublish": "npm run build",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/localvore-today/react-mapbox-autocomplete.git"
+  },
+  "keywords": [
+    "react",
+    "mapbox",
+    "geocoding",
+    "geocoder",
+    "autocomplete"
+  ],
+  "author": "Localvore Today",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/localvore-today/react-mapbox-autocomplete/issues"
+  },
+  "homepage": "https://github.com/localvore-today/react-mapbox-autocomplete#readme",
+  "babel": {
+    "presets": [
+      "react-app"
+    ]
+  },
+  "dependencies": {
+    "lodash": "^4",
+    "lodash-es": "^4",
+    "react": "^15",
+    "react-dom": "^15",
+    "whatwg-fetch": "^2.0.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-core": "^6.24.1",
+    "babel-jest": "^18.0.0",
+    "babel-preset-react-app": "^2.2.0",
+    "enzyme": "^2.7.0",
+    "enzyme-to-json": "^1.4.5",
+    "jest": "^18.1.0",
+    "react-addons-test-utils": "^15.4.2"
+  }
+}
